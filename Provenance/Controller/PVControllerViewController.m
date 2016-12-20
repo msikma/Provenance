@@ -107,6 +107,7 @@
 
 - (void)setupTouchControls
 {
+    #pragma message "test controller"
 #if !TARGET_OS_TV
 	CGFloat alpha = [[PVSettingsModel sharedInstance] controllerOpacity];
 	
@@ -272,6 +273,7 @@
 			}
 		}
 	}
+#pragma message "test controller"
 #endif
 }
 

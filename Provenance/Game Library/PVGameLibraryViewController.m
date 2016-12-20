@@ -280,6 +280,8 @@ static NSString *_reuseIdentifier = @"PVGameLibraryCollectionViewCell";
 #endif
     NSString *documentsDirectoryPath = [paths objectAtIndex:0];
 	
+#pragma message "test on emulator"
+    //documentsDirectoryPath = [[NSString alloc] initWithUTF8String:"/Users/shruglins/Downloads/"];
 	return [documentsDirectoryPath stringByAppendingPathComponent:@"roms"];
 }
 
@@ -378,6 +380,8 @@ static NSString *_reuseIdentifier = @"PVGameLibraryCollectionViewCell";
 
 - (NSString *)BIOSPathForSystemID:(NSString *)systemID
 {
+#pragma message "test emulator"
+    //return [[NSString alloc] initWithUTF8String:"/Users/shruglins/Downloads/com.provenance.psx/bios/"] ;
     return [[[self documentsPath] stringByAppendingPathComponent:@"BIOS"] stringByAppendingPathComponent:systemID];
 }
 

@@ -319,7 +319,7 @@ static NSTimeInterval defaultFrameInterval = 60.0;
 
 - (BOOL)saveStateToFileAtPath:(NSString *)path
 {
-	[self doesNotImplementSelector:_cmd];
+	//[self doesNotImplementSelector:_cmd];
 	return NO;
 }
 

@@ -759,7 +759,7 @@ std::string FCEU_MakeFName(int type, int id1, const char *cd1)
 	return mass_replace(ret,"|",".");
 }
 
-void GetFileBase(const char *f)
+void FCEUI_GetFileBase(const char *f)
 {
 	FileBaseInfo fbi = DetermineFileBase(f);
 	strcpy(FileBase,fbi.filebase.c_str());

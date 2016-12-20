@@ -375,6 +375,8 @@
                 }
 
                 game = [[PVGame alloc] init];
+                #pragma message "test on emulator"
+                //[game setRomPath:[[NSString alloc] initWithUTF8String:"/com.provenance.psx/Ridge Racer.cue"]];
                 [game setRomPath:partialPath];
                 [game setTitle:title];
                 [game setSystemIdentifier:systemID];
@@ -595,7 +597,13 @@
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
 #endif
     
+    
+#pragma message "test on emulator"
     return [paths firstObject];
+    //NSString* documentsDirectoryPath = [[NSString alloc] initWithUTF8String:"/Users/shruglins/Downloads/"];
+    //return documentsDirectoryPath;
+    
+    
 }
 
 - (NSString *)romsPath
